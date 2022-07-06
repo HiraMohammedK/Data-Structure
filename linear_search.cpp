@@ -4,7 +4,7 @@ using namespace std;
 int Linear_Search(int data[],int N,int item)
 {
     int pos;
-    for(pos=1;pos<N;pos++)
+    for(pos=0;pos<N;pos++)
     {
     	if (data[pos] == item)
     	{
