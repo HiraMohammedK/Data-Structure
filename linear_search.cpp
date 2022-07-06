@@ -42,10 +42,10 @@ int main()
 		cout<<k<<" is not present in the given array"<<endl;
  }
  cout<<"\n";
- return 0;
+
  cout<<"Do you want to continue?"<<endl;
  cout<<"1:Yes\n2:No\nEnter your choice: ";
  cin>>choice;
  }while(choice!=2);
-
+  return 0;
 }
