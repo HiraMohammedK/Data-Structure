@@ -114,12 +114,12 @@ class BinarySearchTree
     PostorderTraversal(r -> right_node);
     cout << r -> value << " ";
   }
-  Node * minValueNode(Node * node) {
-      Node * current = node;
-      while (current -> left_node != NULL) {
-        current = current -> left_node;
+  Node * MinValueNode(Node * node) {
+      Node * curr = node;
+      while (curr -> left_node != NULL) {
+        curr = curr -> left_node;
       }
-      return current;
+      return curr;
     }
   Node * deleteNode(Node * r, int v) {
     if (r == NULL) {
@@ -143,7 +143,7 @@ class BinarySearchTree
       }
       else
       {
-        Node * temp = minValueNode(r -> right_node);
+        Node * temp = MinValueNode(r -> right_node);
         r -> value = temp -> value;
         r -> right_node = deleteNode(r -> right_node, temp -> value);
       }
