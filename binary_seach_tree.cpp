@@ -169,6 +169,7 @@ int main()
     cout << "5.Postorder Traversal"<<endl;
     cout << "6.Delete Node"<<endl;
     cout<< "7.Exit"<<endl;
+    cout<<"\n";
     cout<<"Enter your choice:";
     cin >> choice;
     Node * new_node = new Node();
