@@ -11,7 +11,7 @@ void InsertionSort(int data[], int N)
        while(temp<data[ptr])
        {
            data[ptr+1]=data[ptr];
-           ptr=ptr+1;
+           ptr=ptr-1;
        }
       data[ptr+1]=temp;
    }
